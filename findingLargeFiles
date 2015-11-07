@@ -1,0 +1,5 @@
+import os
+
+for filename in os.listdir('C:\\Users\\Kafaka\\Downloads'):
+    if os.path.getsize(filename) >= 104857600:
+        print (filename)
