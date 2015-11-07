@@ -1,0 +1,7 @@
+import os, shutil
+
+for filename in os.listdir('C:\\MyPythonScripts\\Test folder'):
+    if filename.endswith('.txt'):
+        pathname = os.path.join('C:\\MyPythonScripts\\Test folder', filename)
+        if os.path.isfile(pathname):
+            shutil.copy2(pathname, 'C:\\Users\\Kafaka\\Desktop\\Test Folder')
